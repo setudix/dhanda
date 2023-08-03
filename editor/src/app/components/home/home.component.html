@@ -1,0 +1,25 @@
+<p>Here is the editor</p>
+<div class="editor"> 
+  
+  <div id="toPrint" class="hide-toolbar" #toPrint="">
+    <ckeditor
+      [config]="editorConfig"
+      [editor]="Editor"
+      [(ngModel)]="description"
+      #desc="ngModel"
+      spellcheck="false"
+      required
+      minlength="50"
+      name="editor5"
+      (ready)="onReady($event)"
+    >
+    </ckeditor>
+  </div>
+  
+  <br>
+  <br>
+  <div class="text-end">
+    <button (click)="export()">Print
+    </button>
+  </div>
+</div>

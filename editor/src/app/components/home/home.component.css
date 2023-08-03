@@ -1,0 +1,15 @@
+.editor{
+    margin: 10%;
+    height: 300px;
+}
+:host ::ng-deep .ck-editor__editable {
+    min-height: 300px !important;
+}
+
+/* CSS for hiding CKEditor toolbar when printing */
+@media print {
+    .hide-toolbar .cke_top {
+      display: none;
+    }
+  }
+  

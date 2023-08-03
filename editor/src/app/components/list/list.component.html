@@ -1,0 +1,8 @@
+<div>
+    <p>here is the list</p>
+    <div>
+        <li *ngFor="let pdfFile of pdfFileURL">
+          <a [href]="pdfFile" target="_blank">{{ getFileNameFromURL(pdfFile) }}</a>
+        </li>
+    </div>
+</div>
